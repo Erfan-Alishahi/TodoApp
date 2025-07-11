@@ -10,14 +10,14 @@ from jose import jwt, JWTError
 from starlette import status
 from typing import Annotated
 from models import Users
-
+import os
 
 router = APIRouter(
     prefix='/auth',
     tags=['auth']
 )
+SECRET_KEY = os.getenv("SECRET_KEY", "fallback-value")
 
-SECRET_KEY = "79e1ad45e22388d499ca338d6132919d23e24aae5cc61214f36519c56700108e"
 ALGORITHM = "HS256"
 
 
