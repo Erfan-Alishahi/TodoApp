@@ -16,8 +16,8 @@ router = APIRouter(
     prefix='/auth',
     tags=['auth']
 )
-SECRET_KEY = os.getenv("SECRET_KEY", "fallback-value")
 
+SECRET_KEY = os.getenv("SECRET_KEY", "fallback-value")
 ALGORITHM = "HS256"
 
 
