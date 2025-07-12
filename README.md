@@ -1,4 +1,4 @@
-```markdown
+
 # 📝 FastAPI Todo App
 
 A simple and clean backend application for managing todos, built with **FastAPI** and **SQLAlchemy**.
@@ -14,42 +14,37 @@ A simple and clean backend application for managing todos, built with **FastAPI*
 ## 📂 Project Structure
 
 ```
-
-FastAPI\_TodoApp/
-├── main.py              # App entry point
-├── database.py          # DB engine and session
-├── models.py            # SQLAlchemy models
-├── schemas.py           # Pydantic schemas
-├── auth.py              # JWT auth & user verification
+FastAPI_TodoApp/
+├── main.py             # App entry point
+├── database.py         # DB engine and session
+├── models.py           # SQLAlchemy models
+├── schemas.py          # Pydantic schemas
+├── auth.py             # JWT auth & user verification
 ├── routers/
-│   ├── todo.py          # Todo CRUD routes
-│   └── user.py          # User auth routes
-
-````
+│   ├── todo.py         # Todo CRUD routes
+│   └── user.py         # User auth routes
+```
 
 ## 🛠️ Installation
 
-### Clone the repo
+### 1. Clone the repo
 ```bash
 git clone https://github.com/Erfan-Alishahi/FastAPI_TodoApp.git
 cd FastAPI_TodoApp
-````
-
-### Create a virtual environment and activate it
-
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
 ```
 
-### Install dependencies
+### 2. Create a virtual environment and activate it
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
+### 3. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
 > If you don’t have a `requirements.txt`, install manually:
-
 ```bash
 pip install fastapi uvicorn sqlalchemy pydantic passlib[bcrypt] python-jose
 ```
@@ -60,26 +55,26 @@ pip install fastapi uvicorn sqlalchemy pydantic passlib[bcrypt] python-jose
 uvicorn main:app --reload
 ```
 
-API docs will be available at:
-👉 [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+API docs will be available at:  
+👉 http://127.0.0.1:8000/docs
 
 ## 📌 Endpoints Overview
 
-| Method | Endpoint       | Description           | Auth Required |
-| ------ | -------------- | --------------------- | ------------- |
-| POST   | /user/register | Register new user     | ❌             |
-| POST   | /user/login    | Login & get JWT token | ❌             |
-| GET    | /todos         | List all todos        | ✅             |
-| POST   | /todos         | Create a todo         | ✅             |
-| PUT    | /todos/{id}    | Update a todo         | ✅             |
-| DELETE | /todos/{id}    | Delete a todo         | ✅             |
+| Method | Endpoint        | Description             | Auth Required |
+|--------|------------------|-------------------------|---------------|
+| POST   | /user/register   | Register new user       | ❌            |
+| POST   | /user/login      | Login & get JWT token   | ❌            |
+| GET    | /todos           | List all todos          | ✅            |
+| POST   | /todos           | Create a todo           | ✅            |
+| PUT    | /todos/{id}      | Update a todo           | ✅            |
+| DELETE | /todos/{id}      | Delete a todo           | ✅            |
 
 ## 📦 Future Ideas (TODO)
 
-* Add unit tests with Pytest
-* Use PostgreSQL with Docker
-* Add user roles and permissions
-* Create frontend (React/Vue or mobile app)
+- Add unit tests with Pytest
+- Use PostgreSQL with Docker
+- Add user roles and permissions
+- Create frontend (React/Vue or mobile app)
 
 ## 🤝 Contributing
 
@@ -92,5 +87,3 @@ This project is open-source and available under the MIT License.
 ## ✨ Author
 
 Built by [Erfan Alishahi](https://github.com/Erfan-Alishahi) with 💻 and ☕
-
-```
