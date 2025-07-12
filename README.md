@@ -1,5 +1,5 @@
 
-# 📝 FastAPI Todo App
+# 📝 Todo App
 
 A simple and clean backend application for managing todos, built with **FastAPI** and **SQLAlchemy**.
 
@@ -14,7 +14,7 @@ A simple and clean backend application for managing todos, built with **FastAPI*
 ## 📂 Project Structure
 
 ```
-FastAPI_TodoApp/
+TodoApp/
 ├── main.py
 ├── database.py
 ├── models.py
@@ -62,7 +62,7 @@ FastAPI_TodoApp/
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/Erfan-Alishahi/FastAPI_TodoApp.git
+git clone https://github.com/Erfan-Alishahi/TodoApp.git
 cd FastAPI_TodoApp
 ```
 
@@ -75,11 +75,6 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 ### 3. Install dependencies
 ```bash
 pip install -r requirements.txt
-```
-
-> If you don’t have a `requirements.txt`, install manually:
-```bash
-pip install fastapi uvicorn sqlalchemy pydantic passlib[bcrypt] python-jose
 ```
 
 ## ▶️ Run the application
