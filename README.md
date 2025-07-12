@@ -15,14 +15,47 @@ A simple and clean backend application for managing todos, built with **FastAPI*
 
 ```
 FastAPI_TodoApp/
-├── main.py             # App entry point
-├── database.py         # DB engine and session
-├── models.py           # SQLAlchemy models
-├── schemas.py          # Pydantic schemas
-├── auth.py             # JWT auth & user verification
+├── main.py
+├── database.py
+├── models.py
+├── requirements.txt
+├── testdb.db
+├── todosapp.db
+├── alembic.ini
+├── README.md
 ├── routers/
-│   ├── todo.py         # Todo CRUD routes
-│   └── user.py         # User auth routes
+│   ├── todos.py
+│   ├── auth.py
+│   ├── admin.py
+│   └── users.py
+├── static/
+│   ├── css/
+│       ├── base.css
+│       └── bootstrap.css
+│   └── js/
+│       ├── base.js
+│       ├── bootstrap.js
+│       ├── bootstrap.js.map
+│       ├── jquery-slim.js
+│       ├── popper.js
+│       └── popper.min.js.map
+├── templates/
+│   ├── add-todo.html
+│   ├── edit-todo.html
+│   ├── home.html
+│   ├── layout.html
+│   ├── login.html
+│   ├── navbar.html
+│   ├── register.html
+│   └── todo.html
+└── test/
+    ├── test_admin.py
+    ├── test_auth.py
+    ├── test_example.py
+    ├── test_main.py
+    ├── test_todos.py
+    ├── test_users.py
+    └── utils.py
 ```
 
 ## 🛠️ Installation
