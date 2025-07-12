@@ -19,8 +19,6 @@ TodoApp/
 ├── database.py
 ├── models.py
 ├── requirements.txt
-├── testdb.db
-├── todosapp.db
 ├── alembic.ini
 ├── README.md
 ├── routers/
